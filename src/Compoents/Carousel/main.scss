@@ -1,14 +1,10 @@
-.carsoul {
+.carousel {
   position: relative;
-  .mainheading {
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 25%;
-    text-align: center;
-    font-size: 94px;
-    width: 50%;
-    background: -webkit-linear-gradient(#eee, rgb(208, 138, 138));
+  .carousel-title {
+    h1 {
+      position: absolute;
+      top: 25%;
+      text-align: center;
+    }
   }
 }

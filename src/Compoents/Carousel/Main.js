@@ -5,11 +5,11 @@ import imgFive from '../../Image/imgFive.jpeg';
 import imgFour from '../../Image/imgFour.jpeg';
 import imgTwo from '../../Image/imgTwo.jpeg';
 import './main.scss'
-import { Carousel, Form } from 'react-bootstrap'
-const images = [{ Image: imgOne, Title: ["Latest Instruments", "With Professional Trainers"] }]
+import { Carousel } from 'react-bootstrap'
+const images = [{ Image: imgOne, Title: ["Latest Instruments", "With Professional Trainers"] }, { Image: imgTwo, Title: ["Latest Instruments", "With Professional Trainers"] }]
 const Main = () => {
   return (
-    <div className='carsoul'>
+    <>
       <Carousel variant="dark">
         {images.map((items, _) => {
           return <Carousel.Item key={Math.random()}>
@@ -23,12 +23,12 @@ const Main = () => {
               <p>{items.Title[1]}</p>
             </Carousel.Caption>
           </Carousel.Item>
-        })}}
+        })}
       </Carousel>
-      <Form className="mainheading">
+      <div className="carousel-title">
         <h1>Power Drive</h1>
-      </Form>
-    </div>
+      </div>
+    </>
   )
 }
 
