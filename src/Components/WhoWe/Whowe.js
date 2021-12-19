@@ -1,5 +1,4 @@
 import React from "react";
-import Mainimg from "../../Image/MainImg.jpeg";
 import "./index.scss";
 const WhoWe = () => {
   return (
