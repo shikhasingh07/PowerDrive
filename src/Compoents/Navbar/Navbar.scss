@@ -1,14 +1,22 @@
 :root {
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+$heightNav: 5rem;
+$NavColor: linear-gradient(to right, #121740, #004e92);
+$NavHeading: White;
 nav {
   z-index: 11;
   padding: 0px 50px;
+  position: fixed;
   width: 100%;
-  height: var(--nav-height);
+  height: $heightNav;
   backdrop-filter: blur(5px);
   transition: var(--transition);
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
+  background: $NavColor;
+  a {
+    color: white !important;
+  }
 }
