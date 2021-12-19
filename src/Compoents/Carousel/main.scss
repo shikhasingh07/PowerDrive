@@ -1,10 +1,20 @@
+@import "../../styles/Variables.scss";
 .carousel {
+  width: 100% !important;
   position: relative;
-  .carousel-title {
-    h1 {
-      position: absolute;
-      top: 25%;
-      text-align: center;
-    }
+  background-repeat: no-repeat;
+  height: 85vh;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 85vh;
   }
+}
+.carousel-title {
+  position: absolute;
+  width: 50%;
+  top: 8rem;
+  color: white;
+  height: 45px;
 }

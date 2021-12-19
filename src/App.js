@@ -4,10 +4,10 @@ import Cards from './Compoents/Cards/Cards';
 import Whowe from './Compoents/WhoWeAre/Whowe';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Compoents/Footer/Footer';
-
+import "./styles/App.scss"
 function App() {
   return (
-    <div>
+    <div className='wrapper'>
       <Navbar />
       <Main />
       <Cards />

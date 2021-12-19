@@ -1,5 +1,16 @@
 $heightNav: 5rem;
-$NavColor: linear-gradient(to right, #121740, #004e92);
+$NavColor: linear-gradient(
+  90deg,
+  rgba(2, 0, 36, 0.3) 0%,
+  rgba(10, 9, 121, 0.5) 52%,
+  rgba(31, 36, 37, 0.551) 100%
+);
 $NavHeading: White;
 //animation
 $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+//mixin
+@mixin font($fontSize, $font-weight) {
+  font-size: $fontSize;
+  font-weight: $font-weight;
+}

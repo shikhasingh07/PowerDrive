@@ -6,29 +6,33 @@ import imgFour from '../../Image/imgFour.jpeg';
 import imgTwo from '../../Image/imgTwo.jpeg';
 import './main.scss'
 import { Carousel } from 'react-bootstrap'
-const images = [{ Image: imgOne, Title: ["Latest Instruments", "With Professional Trainers"] }, { Image: imgTwo, Title: ["Latest Instruments", "With Professional Trainers"] }]
+const images = [imgOne, imgTwo, imgThree, imgFour, imgFive]
 const Main = () => {
   return (
-    <>
-      <Carousel variant="dark">
-        {images.map((items, _) => {
-          return <Carousel.Item key={Math.random()}>
-            <img
-              className="d-block w-100"
-              src={items.Image}
-              alt="First slide"
-            />
-            <Carousel.Caption>
-              <h5>{items.Title[0]}</h5>
-              <p>{items.Title[1]}</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        })}
-      </Carousel>
-      <div className="carousel-title">
-        <h1>Power Drive</h1>
+    <div className='row pt-4 m-0 ps-4'>
+      <div className='col-6'>
+        <div className="carousel-title text-uppercase">
+          <h1>Power Drive</h1>
+          <h2 className='mt-3'>With Us we Provide Professional Trainer and Clean Equipments</h2>
+          <h2 className='mt-3'>With Us we Provide Professional Trainer and Clean Equipments</h2>
+          <button className='btn mt-5 ms-5 btn-outline-info'>
+            For More</button>
+        </div>
       </div>
-    </>
+      <div className='col-6 m-0 p-0'>
+        <Carousel variant="dark">
+          {images.map((items, _) => {
+            return <Carousel.Item key={Math.random()}>
+              <img
+                className="d-block w-100"
+                src={items}
+                alt="First slide"
+              />
+            </Carousel.Item>
+          })}
+        </Carousel>
+      </div>
+    </div>
   )
 }
 

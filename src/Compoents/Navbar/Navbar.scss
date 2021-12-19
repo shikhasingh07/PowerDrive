@@ -1,17 +1,17 @@
 @import "../../styles/Variables.scss";
 nav {
   z-index: 11;
-  padding: 0px 50px;
+  padding: 2rem;
   position: fixed;
   width: 100%;
   height: $heightNav;
-  backdrop-filter: blur(5px);
-  transition: var(--transition);
-  filter: none !important;
-  pointer-events: auto !important;
-  user-select: auto !important;
   background: $NavColor;
+  -webkit-backdrop-filter: blur(2em);
+  backdrop-filter: blur(1em);
+  transition: $transition;
   a {
     color: $NavHeading !important;
+    text-decoration: none;
+    @include font(20px, 500);
   }
 }

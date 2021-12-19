@@ -1,24 +1,26 @@
 import React from 'react'
-
+import MainImages from '../../Image/MainImg.jpeg'
 const Cards = () => {
   return (
-    <div className='mt-3 d-flex mb-3'>
-      <div className="card m-auto " style={{ width: "18rem" }} >
-        <div className="card-body">
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div className='row m-0 mt-5'>
+      <div className='col-6 m-0 img-card p-0'>
+        <div>
+          <img src={MainImages} alt="a gym" />
+          <div className='card'>
+            <h2>PERSONAL TRANING</h2>
+            <p>You’ll look at graphs and charts in Task One, how to approach the task and
+              the language needed for a successful answer.</p>
+          </div>
         </div>
       </div>
-      <div className="card m-auto " style={{ width: "18rem" }} >
-        <div className="card-body">
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-      <div className="card m-auto " style={{ width: "18rem" }} >
-        <div className="card-body">
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <div className="col-6 m-0 img-card p-0" >
+        <div>
+          <img src={MainImages} alt="a gym" />
+          <div className='card'>
+            <h2>PERSONAL TRANING</h2>
+            <p>You’ll look at graphs and charts in Task One, how to approach the task and
+              the language needed for a successful answer.</p>
+          </div>
         </div>
       </div>
     </div >
