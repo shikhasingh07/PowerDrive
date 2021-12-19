@@ -12,7 +12,7 @@ nav {
   a {
     color: $NavHeading !important;
     text-decoration: none;
-    @include font(20px, 500);
+    @include font(16px, 500);
   }
   @media screen and (max-width: 590px) {
     .brand-logo {
