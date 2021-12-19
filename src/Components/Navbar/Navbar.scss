@@ -1,0 +1,22 @@
+@import "../../styles/Variables.scss";
+nav {
+  z-index: 11;
+  padding: 2rem;
+  position: fixed;
+  width: 100%;
+  height: $heightNav;
+  background: $NavColor;
+  -webkit-backdrop-filter: blur(2em);
+  backdrop-filter: blur(1em);
+  transition: $transition;
+  a {
+    color: $NavHeading !important;
+    text-decoration: none;
+    @include font(20px, 500);
+  }
+  @media screen and (max-width: 590px) {
+    .brand-logo {
+      display: none;
+    }
+  }
+}

@@ -10,7 +10,30 @@ $NavHeading: White;
 $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 //mixin
+//font and colors
 @mixin font($fontSize, $font-weight) {
   font-size: $fontSize;
   font-weight: $font-weight;
+}
+@mixin font-color($color) {
+  color: $color;
+}
+//flex
+@mixin flex-align {
+  display: flex;
+  justify-content: center;
+}
+@mixin btn-all {
+  @include font(18px, 600);
+  border: 2px solid $NavHeading;
+  @include font-color($NavHeading);
+  text-transform: uppercase;
+  padding: 0.8rem 2.5rem;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  transition: color 0.4s linear;
+  margin: 0;
+  text-decoration: none;
 }

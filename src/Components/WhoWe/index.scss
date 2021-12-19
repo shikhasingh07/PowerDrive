@@ -1,0 +1,9 @@
+@import "../../styles/Variables.scss";
+.what-container {
+  @include flex-align();
+  @include font(21px, 600);
+  @include font-color(#fff);
+}
+.what-we-do {
+  border: 2px solid lightblue;
+}
