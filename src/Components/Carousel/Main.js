@@ -10,6 +10,15 @@ const images = [imgOne, imgTwo, imgThree, imgFour, imgFive]
 const Main = () => {
   return (
     <div className='row m-0 '>
+      <div className='col-md-6 col-12 m-0 p-0'>
+        <div className="carousel-title text-uppercase ps-4">
+          <h1>Power Drive</h1>
+          <h2 className='mt-3'>With Us we Provide Professional Trainer and Clean Equipments</h2>
+          <h2 className='mt-3'>With Us we Provide Professional Trainer and Clean Equipments</h2>
+          <button className='btn'>
+            For More</button>
+        </div>
+      </div>
       <div className='col-md-6 col-12  m-0 p-0'>
         <Carousel variant="dark">
           {images.map((items, _) => {
@@ -22,15 +31,6 @@ const Main = () => {
             </Carousel.Item>
           })}
         </Carousel>
-      </div>
-      <div className='col-md-6 col-12 m-0 p-0'>
-        <div className="carousel-title text-uppercase ps-4">
-          <h1>Power Drive</h1>
-          <h2 className='mt-3'>With Us we Provide Professional Trainer and Clean Equipments</h2>
-          <h2 className='mt-3'>With Us we Provide Professional Trainer and Clean Equipments</h2>
-          <button className='btn'>
-            For More</button>
-        </div>
       </div>
     </div>
   )
