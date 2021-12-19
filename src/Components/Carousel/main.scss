@@ -10,7 +10,7 @@
 }
 .carousel-title {
   color: white;
-  height: 45px;
+  margin-top: 6rem;
   .btn {
     @include btn-all();
     margin-top: 2rem;
@@ -18,6 +18,7 @@
 }
 @media screen and (max-width: 590px) {
   .carousel-title {
-    margin-top: 2rem !important;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
   }
 }
