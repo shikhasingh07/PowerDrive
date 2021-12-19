@@ -9,17 +9,8 @@ import { Carousel } from 'react-bootstrap'
 const images = [imgOne, imgTwo, imgThree, imgFour, imgFive]
 const Main = () => {
   return (
-    <div className='row pt-4 m-0 ps-4'>
-      <div className='col-6'>
-        <div className="carousel-title text-uppercase">
-          <h1>Power Drive</h1>
-          <h2 className='mt-3'>With Us we Provide Professional Trainer and Clean Equipments</h2>
-          <h2 className='mt-3'>With Us we Provide Professional Trainer and Clean Equipments</h2>
-          <button className='btn'>
-            For More</button>
-        </div>
-      </div>
-      <div className='col-6 m-0 p-0'>
+    <div className='row m-0 '>
+      <div className='col-md-6 col-12  m-0 p-0'>
         <Carousel variant="dark">
           {images.map((items, _) => {
             return <Carousel.Item key={Math.random()}>
@@ -31,6 +22,15 @@ const Main = () => {
             </Carousel.Item>
           })}
         </Carousel>
+      </div>
+      <div className='col-md-6 col-12 m-0 p-0'>
+        <div className="carousel-title text-uppercase ps-4">
+          <h1>Power Drive</h1>
+          <h2 className='mt-3'>With Us we Provide Professional Trainer and Clean Equipments</h2>
+          <h2 className='mt-3'>With Us we Provide Professional Trainer and Clean Equipments</h2>
+          <button className='btn'>
+            For More</button>
+        </div>
       </div>
     </div>
   )

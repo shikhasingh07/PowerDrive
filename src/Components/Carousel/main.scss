@@ -1,10 +1,7 @@
 @import "../../styles/Variables.scss";
 .carousel {
   width: 100% !important;
-  position: relative;
-  background-repeat: no-repeat;
   height: 85vh;
-
   img {
     width: 100%;
     object-fit: cover;
@@ -12,13 +9,15 @@
   }
 }
 .carousel-title {
-  position: absolute;
-  width: 50%;
-  top: 8rem;
   color: white;
   height: 45px;
   .btn {
     @include btn-all();
     margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 590px) {
+  .carousel-title {
+    margin-top: 2rem !important;
   }
 }

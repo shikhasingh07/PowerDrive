@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './Components/Navbar/Navbar';
 import Main from './Components/Carousel/Main';
-import Cards from './Components/Cards/Components';
+import Cards from './Components/Cards/Cards';
 import Whowe from './Components/WhoWe/Whowe';
 import "./styles/App.scss"
 function App() {
