@@ -1,9 +1,4 @@
-:root {
-  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-$heightNav: 5rem;
-$NavColor: linear-gradient(to right, #121740, #004e92);
-$NavHeading: White;
+@import "../../styles/Variables.scss";
 nav {
   z-index: 11;
   padding: 0px 50px;
@@ -17,6 +12,6 @@ nav {
   user-select: auto !important;
   background: $NavColor;
   a {
-    color: white !important;
+    color: $NavHeading !important;
   }
 }
