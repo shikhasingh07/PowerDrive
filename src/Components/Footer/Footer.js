@@ -2,16 +2,9 @@ import React from 'react'
 import { IoLogoInstagram } from "react-icons/io"
 import { IoLogoWhatsapp } from "react-icons/io"
 import { IoMdCall } from "react-icons/io"
-import GoogleMapReact from 'google-map-react';
 import './Footer.scss'
 const Footer = () => {
-  const mapStyles = {
-    Location: {
-      lat: 28.4089,
-      lng: 77.3178
-    },
-    Zoom: 10
-  };
+
   return (
     <div className='row footer mt-2 m-0 '>
 
