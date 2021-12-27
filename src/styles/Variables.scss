@@ -8,7 +8,9 @@ $NavColor: linear-gradient(
 $NavHeading: White;
 //animation
 $transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-
+$transitionCards: all 0.2s ease-in;
+$transitionCardsImg:scale(1.15);
+$animationRo: rotation 30s linear infinite;
 //mixin
 //font and colors
 @mixin font($fontSize, $font-weight) {

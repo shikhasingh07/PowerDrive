@@ -4,6 +4,61 @@
   @include font(21px, 600);
   @include font-color(#fff);
 }
-.what-we-do {
-  border: 2px solid lightblue;
+
+.cards_landscape_wrap-2{
+  text-align: center;
 }
+.cards_landscape_wrap-2 .container{
+  padding-top: 3rem; 
+  padding-bottom: 3rem;
+}
+
+.cards_landscape_wrap-2 .card-flyer {
+  border-radius: 5px;
+  position: relative;
+  margin-top: 2rem;
+}
+.cards_landscape_wrap-2 .card-flyer .image-box{
+  background: $NavColor;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+}
+.cards_landscape_wrap-2 .card-flyer .image-box img{
+  -webkit-transition:all .9s ease; 
+  -moz-transition:all .9s ease; 
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease; 
+  width: 100%;
+  height:100%;
+  z-index: 0;
+}
+.cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+  opacity: 0.7;
+  -webkit-transform:$transitionCardsImg;
+  -moz-transform:$transitionCardsImg;
+  -ms-transform:$transitionCardsImg;
+  -o-transform:$transitionCardsImg;
+  transform:$transitionCardsImg;
+}
+
+.cards_landscape_wrap-2 .card-flyer{
+  transition: $transitionCards;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+.cards_landscape_wrap-2 .card-flyer:hover{
+  background: #fff;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  transition: $transitionCards;
+}
+.sub-image-topic {
+    position: absolute;
+    top: 53%;
+    transform: translateY(-47%);
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 2rem;
+    @include font(18px, 600);
+    @include font-color($NavHeading);
+  }
