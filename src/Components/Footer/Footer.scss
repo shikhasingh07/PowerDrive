@@ -1,10 +1,27 @@
 .footer {
   height: 35vh;
   padding: 2rem;
-}
-.footer_link {
-  a {
-    display: block;
-    margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+   a {
+    text-decoration: none;
   }
+}
+.footer_link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a{
+    height: 40px;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    svg{
+      fill: rgba(10, 9, 121, 0.5) 52%;
+    }
+} 
+}
+.footer-heading {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
 }
